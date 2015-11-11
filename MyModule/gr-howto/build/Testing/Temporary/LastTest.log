@@ -1,0 +1,20 @@
+Start testing: Nov 11 00:22 EST
+----------------------------------------------------------
+2/2 Testing: qa_square_ff
+2/2 Test: qa_square_ff
+Command: "/bin/sh" "/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/python/qa_square_ff_test.sh"
+Directory: /Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/python
+"qa_square_ff" start time: Nov 11 00:22 EST
+Output:
+----------------------------------------------------------
+Fatal Python error: PyThreadState_Get: no current thread
+/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/python/qa_square_ff_test.sh: line 9: 36450 Abort trap: 6           /opt/local/bin/python2.7 /Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/python/qa_square_ff.py
+<end of output>
+Test time =   0.69 sec
+----------------------------------------------------------
+Test Failed.
+"qa_square_ff" end time: Nov 11 00:22 EST
+"qa_square_ff" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 11 00:22 EST

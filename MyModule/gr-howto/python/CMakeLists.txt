@@ -37,7 +37,9 @@ GR_PYTHON_INSTALL(
 ########################################################################
 # Handle the unit tests
 ########################################################################
+# the following 5 lines are used to test the module
 include(GrTest)
 
 set(GR_TEST_TARGET_DEPS gnuradio-howto)
 set(GR_TEST_PYTHON_DIRS ${CMAKE_BINARY_DIR}/swig)
+GR_ADD_TEST(qa_square_ff ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_square_ff.py)

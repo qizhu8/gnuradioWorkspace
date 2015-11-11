@@ -1,0 +1,4 @@
+test_howto 6 0.00142801
+qa_square_ff 0 0
+---
+qa_square_ff
