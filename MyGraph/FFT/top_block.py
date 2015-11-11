@@ -2,7 +2,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Tue Nov 10 21:19:46 2015
+# Generated: Tue Nov 10 19:57:43 2015
 ##################################################
 
 if __name__ == '__main__':
@@ -30,7 +30,7 @@ import sys
 
 class top_block(gr.top_block, Qt.QWidget):
 
-    def __init__(self, Filename="/root/gnuradio/workspace/gnuradioWorkspace/MyGraph/FFT/dat.dat"):
+    def __init__(self, Filename="/Users/yuwang/gnuradio/Workspace/MyGraph/FFT/freq_sign"):
         gr.top_block.__init__(self, "Top Block")
         Qt.QWidget.__init__(self)
         self.setWindowTitle("Top Block")
@@ -103,7 +103,7 @@ class top_block(gr.top_block, Qt.QWidget):
 
 if __name__ == '__main__':
     parser = OptionParser(option_class=eng_option, usage="%prog: [options]")
-    parser.add_option("", "--Filename", dest="Filename", type="string", default="/root/gnuradio/workspace/gnuradioWorkspace/MyGraph/FFT/dat.dat",
+    parser.add_option("", "--Filename", dest="Filename", type="string", default="/Users/yuwang/gnuradio/Workspace/MyGraph/FFT/freq_sign",
         help="Set Filename [default=%default]")
     (options, args) = parser.parse_args()
     from distutils.version import StrictVersion

@@ -136,7 +136,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>/root/gnuradio/workspace/gnuradioWorkspace/MyGraph/FFT/dat.dat</value>
+      <value>/Users/yuwang/gnuradio/Workspace/MyGraph/FFT/freq_sign</value>
     </param>
   </block>
   <block>
