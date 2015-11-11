@@ -19,7 +19,7 @@
 # Boston, MA 02110-1301, USA.
 # 
 
-'''
+
 from gnuradio import gr, gr_unittest
 from gnuradio import blocks
 import howto_swig as howto
@@ -32,47 +32,20 @@ class qa_square_ff (gr_unittest.TestCase):
     def tearDown (self):
         self.tb = None
 
-    def test_001_t (self):
+    def test_001_square_ff (self):
         src_data = (-3, 4, -5.5, 2, 3)
-	expected_result = (9, 16, 30.25, 4, 9)
-	src = block.vector_source_f(src_data)  # the src_data will go into the block from there
-	sqr = howto.square_ff()  # the block we made
-	dst = block.vector_sink_f()  # the couput of the block will be gathered from here
-	self.tb.connect(src, sqr) # connect src set to the block
-	self.tb.connect(sqr, dst) # connect the block to the dst set
+        expected_result = (9, 16, 30.25, 4, 9)
+        src = blocks.vector_source_f(src_data)  # the src_data will go into the block from there
+        sqr = howto.square_ff()  # the block we made
+        dst = blocks.vector_sink_f()  # the couput of the block will be gathered from here
+        self.tb.connect(src, sqr) # connect src set to the block
+        self.tb.connect(sqr, dst) # connect the block to the dst set
         # set up fg
         self.tb.run () # run the graph until all the blocks finished working
         # check data
-	result_data = dst.data() # get the data from the structure
-	self.assertFloatTuplesAlmostEqual(expected_result, result_data, 6) # check the data
+        result_data = dst.data() # get the data from the structure
+        self.assertFloatTuplesAlmostEqual(expected_result, result_data, 6) # check the data
 
-
-if __name__ == '__main__':
-    gr_unittest.run(qa_square_ff, "qa_square_ff.xml")
-'''
-from gnuradio import gr, gr_unittest
-from gnuradio import blocks
-import howto_swig as howto
-
-class qa_square_ff (gr_unittest.TestCase):
-
-    def setUp (self):
-        self.tb = gr.top_block ()
-
-    def tearDown (self):
-        self.tb = None
-
-    def test_001_square_ff(self):
-        src_data = (-3, 4, -5.5, 2, 3)
-        expected_result = (9, 16, 30.25, 4, 9)
-        src = blocks.vector_source_f(src_data)
-        sqr = howto.square_ff()
-        dst = blocks.vector_sink_f()
-        self.tb.connect(src, sqr)
-        self.tb.connect(sqr, dst)
-        self.tb.run()
-        result_data = dst.data()
-        self.assertFloatTuplesAlmostEqual(expected_result, result_data, 6)
 
 if __name__ == '__main__':
     gr_unittest.run(qa_square_ff, "qa_square_ff.xml")

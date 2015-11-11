@@ -1,4 +1,4 @@
-# Install script for directory: /Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/grc
+# Install script for directory: /home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/grc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,7 +27,12 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES "/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/grc/howto_square_ff.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/grc/howto_square_ff.xml")
 endif()
 

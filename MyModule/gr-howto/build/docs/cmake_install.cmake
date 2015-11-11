@@ -1,4 +1,4 @@
-# Install script for directory: /Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/docs
+# Install script for directory: /home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,9 +27,14 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/docs/doxygen/cmake_install.cmake")
+  include("/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/docs/doxygen/cmake_install.cmake")
 
 endif()
 

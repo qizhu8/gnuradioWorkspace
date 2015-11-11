@@ -1,4 +1,4 @@
-# Install script for directory: /Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto
+# Install script for directory: /home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,19 +27,24 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/howto" TYPE FILE FILES "/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/cmake/Modules/howtoConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/howto" TYPE FILE FILES "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/cmake/Modules/howtoConfig.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/include/howto/cmake_install.cmake")
-  include("/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/lib/cmake_install.cmake")
-  include("/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/swig/cmake_install.cmake")
-  include("/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/python/cmake_install.cmake")
-  include("/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/grc/cmake_install.cmake")
-  include("/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/apps/cmake_install.cmake")
-  include("/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/docs/cmake_install.cmake")
+  include("/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/include/howto/cmake_install.cmake")
+  include("/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/lib/cmake_install.cmake")
+  include("/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/swig/cmake_install.cmake")
+  include("/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/python/cmake_install.cmake")
+  include("/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/grc/cmake_install.cmake")
+  include("/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/apps/cmake_install.cmake")
+  include("/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/docs/cmake_install.cmake")
 
 endif()
 
@@ -49,7 +54,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+file(WRITE "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/${CMAKE_INSTALL_MANIFEST}" "")
+foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
+  file(APPEND "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+endforeach()

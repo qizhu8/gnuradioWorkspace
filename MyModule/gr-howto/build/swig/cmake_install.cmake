@@ -1,4 +1,4 @@
-# Install script for directory: /Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/swig
+# Install script for directory: /home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/swig
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,31 +27,44 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/site-packages/howto" TYPE MODULE FILES "/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/swig/_howto_swig.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/site-packages/howto/_howto_swig.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/site-packages/howto/_howto_swig.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE MODULE FILES "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/swig/_howto_swig.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so")
+    file(RPATH_REMOVE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/site-packages/howto/_howto_swig.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so")
     endif()
   endif()
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/site-packages/howto" TYPE FILE FILES "/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/swig/howto_swig.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/swig/howto_swig.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/site-packages/howto" TYPE FILE FILES
-    "/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/swig/howto_swig.pyc"
-    "/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/swig/howto_swig.pyo"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES
+    "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/swig/howto_swig.pyc"
+    "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/swig/howto_swig.pyo"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/howto/howto/swig" TYPE FILE FILES
-    "/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/swig/howto_swig.i"
-    "/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/swig/howto_swig_doc.i"
+    "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/swig/howto_swig.i"
+    "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/swig/howto_swig_doc.i"
     )
 endif()
 

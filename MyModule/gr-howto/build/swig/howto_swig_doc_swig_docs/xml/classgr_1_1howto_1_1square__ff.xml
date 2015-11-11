@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
-  <compounddef id="classgr_1_1howto_1_1square__ff" kind="class" language="C++" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classgr_1_1howto_1_1square__ff" kind="class" prot="public">
     <compoundname>gr::howto::square_ff</compoundname>
     <basecompoundref prot="public" virt="virtual">block</basecompoundref>
     <includes refid="square__ff_8h" local="no">square_ff.h</includes>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h" line="39" column="1" bodyfile="/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h" bodystart="39" bodyend="-1"/>
+        <location file="/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h" line="39" column="1" bodyfile="/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -31,7 +31,7 @@
 <para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1howto_1_1square__ff" kindref="compound">howto::square_ff</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1howto_1_1square__ff_1a6e406af1472f2707e0d8b533822eab4c" kindref="member">howto::square_ff::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h" line="49" column="1"/>
+        <location file="/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h" line="49" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -60,7 +60,7 @@
         <label>gr::block</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h" line="37" column="1" bodyfile="/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h" bodystart="36" bodyend="50"/>
+    <location file="/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h" line="37" column="1" bodyfile="/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h" bodystart="36" bodyend="50"/>
     <listofallmembers>
       <member refid="classgr_1_1howto_1_1square__ff_1a6e406af1472f2707e0d8b533822eab4c" prot="public" virt="non-virtual"><scope>gr::howto::square_ff</scope><name>make</name></member>
       <member refid="classgr_1_1howto_1_1square__ff_1a447c53a602aa7692878b13932472afab" prot="public" virt="non-virtual"><scope>gr::howto::square_ff</scope><name>sptr</name></member>

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/python
+# Install script for directory: /home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/python
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,14 +27,19 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/site-packages/howto" TYPE FILE FILES "/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/python/__init__.py")
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/site-packages/howto" TYPE FILE FILES
-    "/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/python/__init__.pyc"
-    "/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/build/python/__init__.pyo"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/python/__init__.py")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES
+    "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/python/__init__.pyc"
+    "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/python/__init__.pyo"
     )
 endif()
 

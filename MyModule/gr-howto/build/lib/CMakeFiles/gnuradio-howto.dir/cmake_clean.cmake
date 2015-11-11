@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gnuradio-howto.dir/square_ff_impl.cc.o"
   "libgnuradio-howto.pdb"
-  "libgnuradio-howto.dylib"
+  "libgnuradio-howto.so"
 )
 
 # Per-language clean rules from dependency scanning.

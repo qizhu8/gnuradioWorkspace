@@ -57,7 +57,7 @@ namespace gr {
         // we only have one port, so [0]
 	// we do not need to process several elements a time, just one per time
         // # of input item required    # of output items
-	ninput_items_required[0] = noutput_items;
+      ninput_items_required[0] = noutput_items;
     }
 
     int
@@ -69,9 +69,9 @@ namespace gr {
         const float *in = (const float *) input_items[0];
         float *out = (float *) output_items[0];
 
-	for (int i = 0; i < noutput_items; i++){
-	  out[i] = in[i] * in[i];
-	}
+        for (int i = 0; i < noutput_items; i++){
+          out[i] = in[i] * in[i];
+        }
 
         // Do <+signal processing+>
         // Tell runtime system how many input items we consumed on

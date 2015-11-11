@@ -1,18 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
-  <compounddef id="square__ff_8h" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="square__ff_8h" kind="file">
     <compoundname>square_ff.h</compoundname>
     <includes refid="api_8h" local="no">howto/api.h</includes>
     <includes local="no">gnuradio/block.h</includes>
     <incdepgraph>
-      <node id="6">
-        <label>gnuradio/attributes.h</label>
-      </node>
-      <node id="7">
-        <label>gnuradio/block.h</label>
-      </node>
       <node id="4">
-        <label>/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h</label>
+        <label>/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h</label>
         <link refid="square_ff.h"/>
         <childnode refid="5" relation="include">
         </childnode>
@@ -24,6 +18,12 @@
         <link refid="api_8h"/>
         <childnode refid="6" relation="include">
         </childnode>
+      </node>
+      <node id="6">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="7">
+        <label>gnuradio/block.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="classgr_1_1howto_1_1square__ff" prot="public">gr::howto::square_ff</innerclass>
@@ -78,6 +78,6 @@
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_HOWTO_SQUARE_FF_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h"/>
+    <location file="/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/include/howto/square_ff.h"/>
   </compounddef>
 </doxygen>

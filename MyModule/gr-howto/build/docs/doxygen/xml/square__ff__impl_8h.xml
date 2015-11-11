@@ -1,21 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
-  <compounddef id="square__ff__impl_8h" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="square__ff__impl_8h" kind="file">
     <compoundname>square_ff_impl.h</compoundname>
     <includes refid="square__ff_8h" local="no">howto/square_ff.h</includes>
     <incdepgraph>
-      <node id="39">
-        <label>gnuradio/attributes.h</label>
-      </node>
-      <node id="36">
-        <label>square_ff_impl.h</label>
-        <link refid="square_ff_impl.h"/>
-        <childnode refid="37" relation="include">
-        </childnode>
-      </node>
-      <node id="40">
-        <label>gnuradio/block.h</label>
-      </node>
       <node id="37">
         <label>howto/square_ff.h</label>
         <link refid="square__ff_8h"/>
@@ -30,6 +18,18 @@
         <childnode refid="39" relation="include">
         </childnode>
       </node>
+      <node id="39">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="40">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="36">
+        <label>square_ff_impl.h</label>
+        <link refid="square_ff_impl.h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <innerclass refid="classgr_1_1howto_1_1square__ff__impl" prot="public">gr::howto::square_ff_impl</innerclass>
     <innernamespace refid="namespacegr">gr</innernamespace>
@@ -38,6 +38,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/yuwang/gnuradio/workspace/gnuradioworkspace/MyModule/gr-howto/lib/square_ff_impl.h"/>
+    <location file="/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/lib/square_ff_impl.h"/>
   </compounddef>
 </doxygen>
