@@ -1,4 +1,4 @@
-Actually, this is not a diary for today only. Because I kept screwomg up on installing gnuradio on mac. So here is what I tried and the assumptions I made. Till now, I still have not successfully installed.
+Actually, this is not a diary for today only. Because I kept screwing up on installing gnuradio on mac. So here is what I tried and the assumptions I made. Till now, I still have not successfully installed.
 
 I followed the instruction on gnuradio.org, and I planed to install by compiling the source file, because I have already installed it successfully for many times. 
 I download the sourcefile, cd it, and "mkdir build", make(I will talk about the CC=xxx XXXX later). Unfortunately, I could not make it, then I find that, for mac, maybe we should change the compiler. The reason is that, the default compiler for mac is clang instead of gcc, and clang++ instead of g++. Also, the executable library for python is also not the same with that on linux. So in the instruction webpage online, there is a command to change the default compiler. I think it is something like modifying the makefile.
