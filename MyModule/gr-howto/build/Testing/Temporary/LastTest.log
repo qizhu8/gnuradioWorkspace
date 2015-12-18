@@ -1,19 +1,19 @@
-Start testing: Nov 11 00:55 EST
+Start testing: Dec 04 17:12 EST
 ----------------------------------------------------------
 1/2 Testing: test_howto
 1/2 Test: test_howto
 Command: "/bin/sh" "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/lib/test_howto_test.sh"
 Directory: /home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/lib
-"test_howto" start time: Nov 11 00:55 EST
+"test_howto" start time: Dec 04 17:12 EST
 Output:
 ----------------------------------------------------------
 
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.08 sec
 ----------------------------------------------------------
 Test Passed.
-"test_howto" end time: Nov 11 00:55 EST
+"test_howto" end time: Dec 04 17:12 EST
 "test_howto" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -21,20 +21,20 @@ Test Passed.
 2/2 Test: qa_square_ff
 Command: "/bin/sh" "/home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/python/qa_square_ff_test.sh"
 Directory: /home/uone/gnuradio/gnuradioworkspace/MyModule/gr-howto/build/python
-"qa_square_ff" start time: Nov 11 00:55 EST
+"qa_square_ff" start time: Dec 04 17:12 EST
 Output:
 ----------------------------------------------------------
 .
 ----------------------------------------------------------------------
-Ran 1 test in 0.001s
+Ran 1 test in 0.002s
 
 OK
 <end of output>
-Test time =   0.17 sec
+Test time =   0.26 sec
 ----------------------------------------------------------
 Test Passed.
-"qa_square_ff" end time: Nov 11 00:55 EST
+"qa_square_ff" end time: Dec 04 17:12 EST
 "qa_square_ff" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 11 00:55 EST
+End testing: Dec 04 17:12 EST

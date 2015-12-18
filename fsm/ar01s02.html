@@ -1,0 +1,195 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>The FSM class</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="A Finte State Machine (FSM) Specification Class"><link rel="up" href="index.html" title="A Finte State Machine (FSM) Specification Class"><link rel="prev" href="index.html" title="A Finte State Machine (FSM) Specification Class"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">The FSM class</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="index.html">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> </td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="fsm"></a>The FSM class</h2></div></div></div><p>An FSM describes the evolution of a system with inputs
+x<sub>k</sub>, states s<sub>k</sub> and outputs y<sub>k</sub>. At time k the FSM state is s<sub>k</sub>.
+Upon reception of a new input symbol x<sub>k</sub>, it outputs an output symbol
+y<sub>k</sub> which is a function of both x<sub>k</sub> and s<sub>k</sub>.
+It will then move to a next state s<sub>k+1</sub>.
+An FSM has a finite number of states, input and output symbols.
+All these are formally described as follows:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>The input alphabet A<sub>I</sub>={0,1,2,...,I-1}, with cardinality I, so that x<sub>k</sub> takes values in A<sub>I</sub>.</p></li><li class="listitem"><p>The state alphabet A<sub>S</sub>={0,1,2,...,S-1}, with cardinality S, so that s<sub>k</sub> takes values in A<sub>S</sub>.</p></li><li class="listitem"><p>The output alphabet A<sub>O</sub>={0,1,2,...,O-1}, with cardinality O, so that y<sub>k</sub> takes values in A<sub>O</sub></p></li><li class="listitem"><p>The "next-state" function NS: A<sub>S</sub> x A<sub>I</sub> --&gt; A<sub>S</sub>,
+with the meaning
+s<sub>k+1</sub> = NS(s<sub>k</sub>, x<sub>k</sub>)</p></li><li class="listitem"><p>The "output-symbol" function OS: A<sub>S</sub> x A<sub>I</sub> --&gt; A<sub>S</sub>,
+with the meaning
+y<sub>k</sub> = OS(s<sub>k</sub>, x<sub>k</sub>)</p></li></ul></div><p>
+Thus, a complete description of the FSM is given by the
+the five-tuple (I,S,O,NS,OS).
+Observe that implementation details are hidden
+in how the outside world interprets these input and output
+integer symbols.
+Here is an example of an FSM describing the (2,1) CC
+with constraint length 3 and generator polynomial matrix
+(1+D+D<sup>2</sup> ,  1+D<sup>2</sup>)
+from Proakis-Salehi pg. 779.
+</p><div class="example"><a name="cc_ex"></a><p class="title"><b>Example 1. (2,1) CC with generator polynomials (1+D+D<sup>2</sup> , 1+D<sup>2</sup>)</b></p><div class="example-contents"><p>
+This CC accepts 1 bit at a time, and outputs 2 bits at a time.
+It has a shift register storing the last two input bits.
+In particular,
+b<sub>k</sub>(0)=x<sub>k</sub>+
+x<sub>k-1</sub>+x<sub>k-2</sub>, and
+b<sub>k</sub>(1)=x<sub>k</sub>+
+x<sub>k-2</sub>, where addition is mod-2.
+We can represent the state of this system
+as s<sub>k</sub> = (x<sub>k-1</sub> x<sub>k-2</sub>)<sub>10</sub>. In addition we can represent its
+output symbol as y<sub>k</sub> = (b<sub>k</sub>(1) b<sub>k</sub>(0))<sub>10</sub>.
+Based on the above assumptions, the input alphabet A<sub>I</sub>={0,1}, so I=2;
+the state alphabet A<sub>S</sub>={0,1,2,3}, so S=4; and
+the output alphabet A<sub>O</sub>={0,1,2,3}, so O=4.
+The "next-state" function NS(,) is given by
+</p><pre class="programlisting">
+s<sub>k</sub>	x<sub>k</sub>	s<sub>k+1</sub>
+0	0	0
+0	1	2
+1	0	0
+1	1	2
+2	0	1
+2	1	3
+3	0	1
+3	1	3
+</pre><p>
+The "output-symbol" function OS(,) can be given by
+</p><pre class="programlisting">
+s<sub>k</sub>	x<sub>k</sub>	y<sub>k</sub>
+0	0	0
+0	1	3
+1	0	3
+1	1	0
+2	0	1
+2	1	2
+3	0	2
+3	1	1
+</pre><p>
+</p><p>
+Note that although the CC outputs 2 bits per time period, following
+our approach, there is only one (quaternary) output symbol per
+time period (for instance, here we use the decimal representation
+of the 2-bits). Also note that the modulation used is not part of
+the FSM description: it can be BPSK, OOK, BFSK, QPSK with or without Gray mapping, etc;
+it is up to the rest of the program to interpret the meaning of
+the symbol y<sub>k</sub>.
+</p></div></div><br class="example-break"><p>
+The C++ implementation of the FSM class keeps private information about
+I,S,O,NS,OS and public methods to read and write them. The NS
+and OS matrices are implemented as STL 1-dimensional vectors.
+</p><pre class="programlisting">
+class fsm {
+private:
+  int d_I;
+  int d_S;
+  int d_O;
+  std::vector&lt;int&gt; d_NS;
+  std::vector&lt;int&gt; d_OS;
+  std::vector&lt; std::vector&lt; int&gt; &gt; d_PS;
+  std::vector&lt; std::vector&lt; int&gt; &gt; d_PI;
+  std::vector&lt;int&gt; d_TMi;
+  std::vector&lt;int&gt; d_TMl;
+  void generate_PS_PI ();
+  void generate_TM ();
+  bool find_es(int es);
+public:
+  fsm();
+  fsm(const fsm &amp;FSM);
+  fsm(int I, int S, int O, const std::vector&lt;int&gt; &amp;NS, const std::vector&lt;int&gt; &amp;OS);
+  fsm(const char *name);
+  fsm(int k, int n, const std::vector&lt;int&gt; &amp;G);
+  fsm(int mod_size, int ch_length);
+  int I () const { return d_I; }
+  int S () const { return d_S; }
+  int O () const { return d_O; }
+  const std::vector&lt;int&gt; &amp; NS () const { return d_NS; }
+  const std::vector&lt;int&gt; &amp; OS () const { return d_OS; }
+  const std::vector&lt; std::vector&lt; int&gt; &gt; &amp; PS () const { return d_PS; }
+  const std::vector&lt; std::vector&lt; int&gt; &gt; &amp; PI () const { return d_PI; }
+  const std::vector&lt;int&gt; &amp; TMi () const { return d_TMi; }
+  const std::vector&lt;int&gt; &amp; TMl () const { return d_TMl; }
+};
+</pre><p>
+As can be seen, other than the trivial and the copy constructor,
+there are three additional
+ways to construct an FSM.
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Supplying the parameters I,S,O,NS,OS:</p><pre class="programlisting">
+  fsm(const int I, const int S, const int O, const std::vector&lt;int&gt; &amp;NS, const std::vector&lt;int&gt; &amp;OS);
+</pre></li><li class="listitem"><p>Giving a filename containing all the FSM information:</p><pre class="programlisting">
+  fsm(const char *name);
+</pre><p>
+This information has to be in the following format:
+</p><pre class="programlisting">
+I S O
+
+NS(0,0)   NS(0,1)   ...  NS(0,I-1)
+NS(1,0)   NS(1,1)   ...  NS(1,I-1)
+...
+NS(S-1,0) NS(S-1,1) ...  NS(S-1,I-1)
+
+OS(0,0)   OS(0,1)   ...  OS(0,I-1)
+OS(1,0)   OS(1,1)   ...  OS(1,I-1)
+...
+OS(S-1,0) OS(S-1,1) ... OS(S-1,I-1)
+</pre><p>
+</p><p>
+For instance, the file containing the information for the example mentioned above is of the form:
+</p><pre class="programlisting">
+2 4 4
+
+0 2 // this means state0--input0-->state<b>0</b>, state0--input1-->state<b>2</b>
+0 2 // this means state1--input0-->state<b>0</b>, state1--input1-->state<b>2</b>
+1 3
+1 3
+
+0 3 // this means state0--input0-->output<b>0</b>, state0--input1-->output<b>3</b>
+3 0 // this means state1--input0-->output<b>3</b>, state1--input1-->output<b>0</b>
+1 2
+2 1
+</pre><p>
+</p></li><li class="listitem"><p>
+The third way is specific to FSMs representing binary (n,k) conolutional codes. These FSMs are specified by the number of input bits k, the number of output bits n, and the generator matrix, which is a k x n matrix of integers
+G = [g<sub>i,j</sub>]<sub>i=1:k, j=1:n</sub>, given as an one-dimensional STL vector.
+Each integer g<sub>i,j</sub> is the decimal representation of the
+polynomial g<sub>i,j</sub>(D) (e.g., g<sub>i,j</sub>= 6 = 110<sub>2</sub> is interpreted as g<sub>i,j</sub>(D)=1+D) describing the connections from  the sequence x<sub>i</sub> to
+y<sub>j</sub> (e.g., in the above example y<sub>j</sub>(k) = x<sub>i</sub>(k) + x<sub>i</sub>(k-1)).
+</p><pre class="programlisting">
+  fsm(int k, int n, const std::vector&lt;int&gt; &amp;G);
+</pre></li><li class="listitem"><p>
+The fourth way is specific to FSMs resulting from shift registers, and the output symbol being the entire transition (ie, current_state and current_input). These FSMs are usefull when describibg ISI channels. In particular the state is comprised of the input symbols x(k-1), x(k-2),...,x(k-L), where L = ch_length-1 and each x(i) belongs to an alphabet of size mod_size. The output is taken to be x(k), x(k-1), x(k-2),...,x(k-L) (in decimal format)
+</p><pre class="programlisting">
+  fsm(const int mod_size, const int ch_length);
+</pre></li><li class="listitem"><p>
+I have added other constructors as well, eg, one that constructs an FSM appropriate for modeling an arbitrary CPM scheme; one that constructs the radix-n version of a given FSM; one that constructs the "concatenation" of two FSMs, etc.
+</p></li></ul></div><p>
+As can be seen from the above description, there are
+two more variables included in the FSM class implementation,
+the PS and the PI matrices. These are computed internally
+when an FSM is instantiated and their meaning is as follows.
+Sometimes (eg, in the traceback operation of the VA) we need
+to trace the history of the state or the input sequence.
+To do this we would like to know for a given state s<sub>k</sub>, what are the possible previous states s<sub>k-1</sub>
+and what input symbols x<sub>k-1</sub> will get us from
+s<sub>k-1</sub> to s<sub>k</sub>. This information can be derived from NS; however we want to have it ready in a
+convenient format.
+In the following we assume that for any state,
+the number of incoming transitions is the same as the number of
+outgoing transitions, ie, equal to I. All applications of interest
+have FSMs satisfying this requirement.
+
+If we arbitrarily index the incoming transitions to the current state
+by "i", then  as i goes from 0 to I-1, PS(s<sub>k</sub>,i)
+gives all previous states s<sub>k-1</sub>,
+and PI(s<sub>k</sub>,i) gives all previous inputs x<sub>k-1</sub>.
+In other words, for any given s<sub>k</sub> and any index i=0,1,...I-1, starting from
+s<sub>k-1</sub>=PS(s<sub>k</sub>,i)
+with input
+x<sub>k-1</sub>=PI(s<sub>k</sub>,i)
+will get us to the state s<sub>k</sub>.
+More formally, for any i=0,1,...I-1 we have
+s<sub>k</sub> = NS(PS(s<sub>k</sub>,i),PI(s<sub>k</sub>,i)).
+
+</p><p>
+Finally, there are
+two more variables included in the FSM class implementation,
+the TMl and the TMi matrices. These are both S x S matrices (represented as STL vectors) computed internally
+when an FSM is instantiated and their meaning is as follows.
+TMl(i,j) is the minimum number of trellis steps required to go from state i to state j.
+Similarly, TMi(i,j) is the initial input required to get you from state i to state j in the minimum number of steps. As an example, if TMl(1,4)=2, it means that you need 2 steps in the trellis to get from state 1 to state 4. Further,
+if TMi(1,4)=0 it means that the first such step will be followed if when at state 1 the input is 0. Furthermore, suppose that NS(1,0)=2. Then, TMl(2,4) should be 1 (ie, one more step is needed when starting from state 2 and having state 4 as the final destination). Finally, TMi(2,4) will give us the second input required to complete the path from 1 to 4.
+These matrices are useful when we want to implement an encoder with proper state termination. For instance, based on these matrices we can evaluate how many
+additional input symbols (and which particular inputs) are required to be appended at the end of an input sequence so that the final state is always 0.
+
+</p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="index.html">Prev</a> </td><td width="20%" align="center"> </td><td width="40%" align="right"> </td></tr><tr><td width="40%" align="left" valign="top">A Finte State Machine (FSM) Specification Class </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> </td></tr></table></div></body></html>
