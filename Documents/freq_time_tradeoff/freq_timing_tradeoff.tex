@@ -1,0 +1,116 @@
+\documentclass[journal]{IEEEtran}
+\usepackage{algorithmic}
+\usepackage{array}
+\usepackage{url,amsfonts,amsmath,amssymb,amsthm,color,enumerate,tikz,hyperref}
+\usepackage{algorithm,bbm}
+% \usepackage{indentfirst}
+\usepackage{stackrel}
+\usepackage{listings}
+\usepackage{subfigure}
+\usepackage{subfloat}
+\usepackage[justification=centering]{caption}
+\usepackage{booktabs} % for three-line table
+% \usepackage{subfig}
+\usepackage{graphicx}
+\ifCLASSINFOpdf
+\else
+\fi
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+\title{Trade-off of Frequency \& Timing Estimation}
+
+\author{Yu Wang% <-this % stops a space
+% \thanks{}% <-this % stops a space
+}
+
+% The paper headers
+% \markboth{}%
+% {}
+\maketitle
+% \IEEEpeerreviewmaketitle
+
+\section{Introduction} % (fold)
+\label{sec:introduction}
+	Trade-off is common in the world. There is one famous theory called uncertainty principle\cite{Uncertainty_Principle}. Also, there is also a trade off for estimating frequency and timing.
+
+	In this scenario, we are trying to estimate the frequency offset of the received signal, and estimate the start point of the frame. We will prove that, the estimation cannot be perfect.
+% section introduction (end)
+
+\section{Mathematical Model} % (fold)
+\label{sec:mathematical_model}
+\subsection{rectangle wave} % (fold)
+\label{sub:rectangle_wave}
+
+% subsection rectangle_wave (end)
+The signal we use is $s(t)$:
+\begin{align}
+	s(t) = 
+	\begin{cases}
+		\alpha & 0 \leq t \leq T_s\\
+		0 	   & else
+	\end{cases}
+\end{align}
+This is a very simple rectangle wave.
+For the receiver, we only consider about delay $t_0$ and frequency offset $\Delta f$, the received signal $r(t)$ would be
+\begin{align}
+	r(t) = s(t - t_0) e^{j 2 \pi \Delta f t}
+\end{align}
+But for the receiver, it doesn't know anything about the receiver, so the only tag receiver could choose for the matched filter is $h(t)$
+\begin{align}
+	h(t) = s(T_s - t)
+\end{align}
+Then, the output of the matched filter is $R(t)$, the result of convolution between $r(t)$ and $h(t)$. 
+\begin{align}
+	R(t) = r(t) \ast h(t) 
+	&= \int_{-\infty}^{+\infty} r(\tau) h(t - \tau) d\tau\\
+	&= \int_{t_0}^t s(\tau - t_0)e^{j 2 \pi \Delta f \tau} s(\tau - (t - T_s)) d \tau\\
+	&= \int_{t_0}^t \alpha^2 e^{j 2 \pi \Delta f \tau} d \tau\\
+	&= \alpha^2 \frac{e^{j 2 \pi \Delta f t}}{j 2\pi \Delta f} \bigg|_{t_0}^t\\
+	&= \alpha^2 \frac{e^{j 2\pi \Delta f t} - e^{j 2\pi \Delta f t_0}}{j 2\pi \Delta f}
+\end{align}
+
+Now, we will discuss three specific situations:
+\subsubsection{$\Delta f = 0$ and $t_0 = 0$} % (fold)
+\label{ssub:no freq offset or delay}
+We will find that, the numerator and denominator are all 0, so we will turn to L'Hospital.
+\begin{align}
+	 &\lim_{\Delta f \rightarrow 0} \alpha^2 \frac{e^{j 2\pi \Delta f t} - e^{j 2\pi \Delta f t_0}}{j 2\pi \Delta f}\\
+	 =& \lim_{\Delta f \rightarrow 0} \alpha^2 \frac{j 2\pi t e^{j 2\pi \Delta f t} - j 2\pi t_0 e^{j 2\pi \Delta f t_0}}{j 2\pi}\\
+	 =& \alpha^2(t - t_0)
+\end{align}
+When $t_0 = 0$, $R(t) = \alpha^2 t$.
+And we know that, because of the domain of $t$, we know that, when $t = T_s$, $R(t)$ will get its maximum value $R(Ts) = \alpha^2 T_s$.
+
+\subsubsection{$\Delta f = 0$, $t_0 = ?$} % (fold)
+\label{ssub:no freq offset, but delay is unknown}
+Similar to the procedure in part \ref{ssub:no freq offset or delay}, also sample at $t = T_s$
+\begin{align}
+	R(t) = \alpha^2(T_s-t_0) \Rightarrow \hat{t_0} = T_s - \frac{R(t)}{\alpha^2}
+\end{align}
+
+\subsubsection{$t_0 = 0$, but $\Delta f = ?$} % (fold)
+\label{ssub:no delay, but freq offset is unknown}
+Sample at $t = T_s$
+\begin{align}
+	R(t) = \alpha^2 \frac{e^{j 2\pi \Delta f T_s} - 1}{j 2\pi \Delta f} = \alpha^2 T_s e^{j \pi \Delta f T_s} sa(\Delta 2 \pi f Ts)
+\end{align}
+So, we know that, when we get the correct $\Delta f$, we will get the largest value. 
+
+But we still haven't touch the situation where $\Delta f = ?$ and $t_0 = ?$. Our method is brute search.
+We enumerate all the possible pair of parameters $(t_0', \Delta f')$, and try them. With the help of above three theory, we know that, the correct/similar to true value will give out the largest $R(t)$.
+
+\subsubsection{Mathematical Model} % (fold)
+\label{ssub:mathematical_model}
+
+% subsubsection mathematical_model (end)
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{bibliography.bib}
+\end{document}
+
+
