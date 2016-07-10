@@ -1,0 +1,8 @@
+PWD /Users/yuwang/github/gnuradioworkspace/Documents/get_start_with_gr-cdma/Chapters
+INPUT /usr/local/texlive/2015/texmf.cnf
+INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT chapter_2_Working_Strategy_of_gr-cdma.tex
+OUTPUT chapter_2_Working_Strategy_of_gr-cdma.log
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm

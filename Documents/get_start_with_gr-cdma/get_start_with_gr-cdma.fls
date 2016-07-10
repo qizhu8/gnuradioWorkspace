@@ -1,4 +1,4 @@
-PWD /Users/yuwang/Google Drive/Umich/gr-cdma/notes/get_start_with_gr-cdma
+PWD /Users/yuwang/github/gnuradioworkspace/Documents/get_start_with_gr-cdma
 INPUT /usr/local/texlive/2015/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -296,11 +296,21 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 OUTPUT get_start_with_gr-cdma.toc
+INPUT Chapters/chapter_1_introduction.tex
+INPUT Chapters/chapter_1_introduction.tex
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT Chapters/chapter_2_Working_Strategy_of_gr-cdma.tex
+INPUT Chapters/chapter_2_Working_Strategy_of_gr-cdma.tex
+INPUT figure/tx-diagram.png
+INPUT ./figure/tx-diagram.png
+INPUT ./figure/tx-diagram.png
+INPUT figure/rx-diagram.png
+INPUT ./figure/rx-diagram.png
+INPUT ./figure/rx-diagram.png
 INPUT get_start_with_gr-cdma.bbl
 INPUT get_start_with_gr-cdma.bbl
 INPUT get_start_with_gr-cdma.aux

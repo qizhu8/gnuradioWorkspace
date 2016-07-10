@@ -3,4 +3,5 @@
 \contentsline {section}{\numberline {1.2}What is GNURadio}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}What is the Current State of gr-cdma}{2}{section.1.3}
 \contentsline {chapter}{\numberline {2}Working Strategy of gr-cdma}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}The diagram of The TX \& RX}{3}{section.2.1}
+\contentsline {section}{\numberline {2.1}The diagram of The Tx \& Rx}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Transmitter}{4}{section.2.2}

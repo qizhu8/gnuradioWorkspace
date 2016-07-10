@@ -1,14 +1,16 @@
 # Fdb version 3
-["bibtex get_start_with_gr-cdma"] 1466218724 "get_start_with_gr-cdma.aux" "get_start_with_gr-cdma.bbl" "get_start_with_gr-cdma" 1466218725
+["bibtex get_start_with_gr-cdma"] 1468109909 "get_start_with_gr-cdma.aux" "get_start_with_gr-cdma.bbl" "get_start_with_gr-cdma" 1468109910
   "/usr/local/texlive/2015/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "bibliography.bib" 1466215817 347 c7325d7e74c3bb1a29c71607b684713e ""
-  "get_start_with_gr-cdma.aux" 1466218725 1507 dd71b009e2bd6bd13199c2b40c9664a1 ""
+  "bibliography.bib" 1466274430 347 c7325d7e74c3bb1a29c71607b684713e ""
+  "get_start_with_gr-cdma.aux" 1468109910 2126 3d2cc3dd244a940a1322c310063ea9a1 ""
   "get_start_with_gr-cdma.bcf" 0 -1 0 ""
   (generated)
   "get_start_with_gr-cdma.blg"
   "get_start_with_gr-cdma.bbl"
-["pdflatex"] 1466218724 "get_start_with_gr-cdma.tex" "get_start_with_gr-cdma.pdf" "get_start_with_gr-cdma" 1466218725
-  "./get_start_with_gr-cdma.out" 1466218725 389 42c6fd87d96b04a31ed250e6992e553b ""
+["pdflatex"] 1468109909 "get_start_with_gr-cdma.tex" "get_start_with_gr-cdma.pdf" "get_start_with_gr-cdma" 1468109910
+  "./figure/rx-diagram.png" 1466274430 219788 4c8ff2b21d1ca7923f3b894841997919 ""
+  "./figure/tx-diagram.png" 1468098997 187229 3f7ffd822b8c6957d4ac1dbd5109906e ""
+  "./get_start_with_gr-cdma.out" 1468109910 446 139418edea2a21f3d3c2e5fdb2350a5c ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -181,14 +183,18 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1432479681 3849859 39a7d258195bde2394e244961601fbc5 ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "get_start_with_gr-cdma.aux" 1466218725 1507 dd71b009e2bd6bd13199c2b40c9664a1 ""
-  "get_start_with_gr-cdma.bbl" 1466218724 106 c7bbe2fa7e608ba65f5d9f7f3f58a99a "bibtex get_start_with_gr-cdma"
-  "get_start_with_gr-cdma.out" 1466218725 389 42c6fd87d96b04a31ed250e6992e553b ""
-  "get_start_with_gr-cdma.tex" 1466218657 2578 068e0adf957c0558c1f6b55f6b5c1da1 ""
-  "get_start_with_gr-cdma.toc" 1466218725 479 af35bb726f12ca229d5a850a7acbd765 ""
+  "Chapters/chapter_1_introduction.tex" 1468108504 1242 bf16631dd9f69e56e37ca7dced9c81eb ""
+  "Chapters/chapter_2_Working_Strategy_of_gr-cdma.tex" 1468109344 1597 f0f64408a7eaee26c2866eb19f64dece ""
+  "figure/rx-diagram.png" 1466274430 219788 4c8ff2b21d1ca7923f3b894841997919 ""
+  "figure/tx-diagram.png" 1468098997 187229 3f7ffd822b8c6957d4ac1dbd5109906e ""
+  "get_start_with_gr-cdma.aux" 1468109910 2126 3d2cc3dd244a940a1322c310063ea9a1 ""
+  "get_start_with_gr-cdma.bbl" 1468109909 106 c7bbe2fa7e608ba65f5d9f7f3f58a99a "bibtex get_start_with_gr-cdma"
+  "get_start_with_gr-cdma.out" 1468109910 446 139418edea2a21f3d3c2e5fdb2350a5c ""
+  "get_start_with_gr-cdma.tex" 1468108609 1182 09efd4770f24f5e651bc16d163ef8df8 ""
+  "get_start_with_gr-cdma.toc" 1468109910 549 0d2409ab445a9e8fac0fc0d0609cdd7e ""
   (generated)
-  "get_start_with_gr-cdma.pdf"
   "get_start_with_gr-cdma.aux"
   "get_start_with_gr-cdma.toc"
   "get_start_with_gr-cdma.log"
+  "get_start_with_gr-cdma.pdf"
   "get_start_with_gr-cdma.out"
