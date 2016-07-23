@@ -5,3 +5,9 @@
 \contentsline {chapter}{\numberline {2}Working Strategy of gr-cdma}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}The diagram of The Tx \& Rx}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Transmitter}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Spreading Code}{4}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}M-Sequence}{4}{subsubsection.2.2.1.1}
+\contentsline {subsection}{\numberline {2.2.2}Gold Sequence}{5}{subsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Spreading Seuquence used in gr-cdma}{5}{subsubsection.2.2.2.1}
+\contentsline {subsection}{\numberline {2.2.3}Packet Structure}{5}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Power Control}{6}{subsection.2.2.4}

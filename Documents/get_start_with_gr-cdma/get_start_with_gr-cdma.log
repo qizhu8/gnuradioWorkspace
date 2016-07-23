@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  9 JUL 2016 20:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  23 JUL 2016 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -822,20 +822,20 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
 )) (./get_start_with_gr-cdma.aux)
 \openout1 = `get_start_with_gr-cdma.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -867,7 +867,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box64
-Package hyperref Info: Link coloring OFF on input line 37.
+Package hyperref Info: Link coloring OFF on input line 40.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -877,9 +877,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count163
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+LaTeX Info: Redefining \nameref on input line 40.
 
 (./get_start_with_gr-cdma.out) (./get_start_with_gr-cdma.out)
 \@outlinefile=\write4
@@ -888,12 +888,12 @@ LaTeX Info: Redefining \nameref on input line 37.
 \c@lstlisting=\count164
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 39.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 39.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -908,71 +908,123 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 \newpage
+l.43 \newpage
               [1
 
-] (./Chapters/chapter_1_introduction.tex
+]
 Chapter 1.
-) (./Chapters/chapter_2_Working_Strategy_of_gr-cdma.tex [2
+[2
 
 ]
 Chapter 2.
-<figure/tx-diagram.png, id=90, 720.291pt x 499.1448pt>
+<figure/tx-diagram.png, id=120, 720.291pt x 499.1448pt>
 File: figure/tx-diagram.png Graphic file (type png)
 
 <use figure/tx-diagram.png>
-Package pdftex.def Info: figure/tx-diagram.png used on input line 9.
+Package pdftex.def Info: figure/tx-diagram.png used on input line 77.
 (pdftex.def)             Requested size: 361.34999pt x 250.40958pt.
 
-Overfull \hbox (16.34999pt too wide) in paragraph at lines 9--10
+Overfull \hbox (16.34999pt too wide) in paragraph at lines 77--78
  [][] 
  []
 
-<figure/rx-diagram.png, id=92, 911.0838pt x 424.9476pt>
+<figure/rx-diagram.png, id=122, 911.0838pt x 424.9476pt>
 File: figure/rx-diagram.png Graphic file (type png)
 
 <use figure/rx-diagram.png>
-Package pdftex.def Info: figure/rx-diagram.png used on input line 15.
+Package pdftex.def Info: figure/rx-diagram.png used on input line 83.
 (pdftex.def)             Requested size: 361.34999pt x 168.54301pt.
 
-Overfull \hbox (16.34999pt too wide) in paragraph at lines 15--16
+Overfull \hbox (16.34999pt too wide) in paragraph at lines 83--84
  [][] 
  []
 
 [3
 
- <./figure/tx-diagram.png>]) (./get_start_with_gr-cdma.bbl [4 <./figure/rx-diag
-ram.png>]) [5
+ <./figure/tx-diagram.png>]
+<figure/bad_correlation.png, id=131, 230.3004pt x 152.7306pt>
+File: figure/bad_correlation.png Graphic file (type png)
+
+<use figure/bad_correlation.png>
+Package pdftex.def Info: figure/bad_correlation.png used on input line 100.
+(pdftex.def)             Requested size: 216.81pt x 143.78584pt.
+
+<figure/good_correlation.png, id=132, 230.3004pt x 152.7306pt>
+File: figure/good_correlation.png Graphic file (type png)
+
+<use figure/good_correlation.png>
+Package pdftex.def Info: figure/good_correlation.png used on input line 101.
+(pdftex.def)             Requested size: 216.81pt x 143.78584pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
+[][]
+ []
+
+
+Overfull \hbox (5.6228pt too wide) in paragraph at lines 124--137
+ [][] 
+ []
+
+[4 <./figure/rx-diagram.png>]
+<figure/data_frame.png, id=149, 755.4624pt x 195.6108pt>
+File: figure/data_frame.png Graphic file (type png)
+
+<use figure/data_frame.png>
+Package pdftex.def Info: figure/data_frame.png used on input line 174.
+(pdftex.def)             Requested size: 361.34999pt x 93.56378pt.
+
+Overfull \hbox (16.34999pt too wide) in paragraph at lines 174--175
+ [][] 
+ []
+
+<figure/training_frame.png, id=150, 752.5716pt x 211.5102pt>
+File: figure/training_frame.png Graphic file (type png)
+
+<use figure/training_frame.png>
+Package pdftex.def Info: figure/training_frame.png used on input line 180.
+(pdftex.def)             Requested size: 361.34999pt x 101.556pt.
+
+Overfull \hbox (16.34999pt too wide) in paragraph at lines 180--181
+ [][] 
+ []
+
+[5 <./figure/bad_correlation.png> <./figure/good_correlation.png>]
+(./get_start_with_gr-cdma.bbl [6] [7 <./figure/data_frame.png> <./figure/traini
+ng_frame.png>]) [8
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
  (./get_start_with_gr-cdma.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
 Package rerunfilecheck Info: File `get_start_with_gr-cdma.out' has not changed.
 
-(rerunfilecheck)             Checksum: 139418EDEA2A21F3D3C2E5FDB2350A5C;446.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
+(rerunfilecheck)             Checksum: 0E532B9CAD9BDE6AB530C66BFE090D01;889.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
  ) 
 Here is how much of TeX's memory you used:
- 21532 strings out of 493089
- 421516 string characters out of 6134842
- 508018 words of memory out of 5000000
- 24589 multiletter control sequences out of 15000+600000
- 12576 words of font info for 49 fonts, out of 8000000 for 9000
+ 21583 strings out of 493089
+ 422528 string characters out of 6134842
+ 515685 words of memory out of 5000000
+ 24627 multiletter control sequences out of 15000+600000
+ 12883 words of font info for 50 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,7n,78p,613b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,78p,492b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on get_start_with_gr-cdma.pdf (6 pages, 307176 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on get_start_with_gr-cdma.pdf (9 pages, 448402 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 175 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 222 PDF objects out of 1000 (max. 8388607)
+ 171 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 243 words of extra memory for PDF output out of 10000 (max. 10000000)
 
