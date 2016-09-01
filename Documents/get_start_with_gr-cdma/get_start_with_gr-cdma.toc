@@ -1,13 +1,37 @@
-\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
-\contentsline {section}{\numberline {1.1}What is gr-cdma}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}What is GNURadio}{2}{section.1.2}
-\contentsline {section}{\numberline {1.3}What is the Current State of gr-cdma}{2}{section.1.3}
-\contentsline {chapter}{\numberline {2}Working Strategy of gr-cdma}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}The diagram of The Tx \& Rx}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Transmitter}{4}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Spreading Code}{4}{subsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.1.1}M-Sequence}{4}{subsubsection.2.2.1.1}
-\contentsline {subsection}{\numberline {2.2.2}Gold Sequence}{5}{subsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.2.1}Spreading Seuquence used in gr-cdma}{5}{subsubsection.2.2.2.1}
-\contentsline {subsection}{\numberline {2.2.3}Packet Structure}{5}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Power Control}{6}{subsection.2.2.4}
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}What is gr-cdma}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}What is GNURadio}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}What is the Current State of gr-cdma}{3}{section.1.3}
+\contentsline {chapter}{\numberline {2}Working Strategy of gr-cdma}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}The diagram of The Tx \& Rx}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Transmitter}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Spreading Code}{5}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}M-Sequence}{5}{subsubsection.2.2.1.1}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Gold Sequence}{6}{subsubsection.2.2.1.2}
+\contentsline {subsubsection}{\numberline {2.2.1.3}Spreading Seuquence used in gr-cdma}{6}{subsubsection.2.2.1.3}
+\contentsline {subsection}{\numberline {2.2.2}Packet Structure}{6}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Power Control}{7}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Multi-Sampling and Pulse Shaping}{7}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Receiver}{8}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Frequency and Timing Estimator}{8}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}Timing Information}{8}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Frequency Information}{9}{subsubsection.2.3.1.2}
+\contentsline {subsubsection}{\numberline {2.3.1.3}Structure for Joint Estimator}{9}{subsubsection.2.3.1.3}
+\contentsline {subsection}{\numberline {2.3.2}De-spreading}{10}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Packet Parser}{10}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Error Calculator}{10}{subsection.2.3.4}
+\contentsline {chapter}{\numberline {3}Mathematic Bases}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{12}{section.3.1}
+\contentsline {section}{\numberline {3.2}Frequency and TIming Trade-off in Estimation}{13}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Mathematical Model}{13}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}$\Delta f = 0$ and $t_0 = 0$}{13}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.2}$\Delta f = 0$, $t_0 = ?$}{14}{subsubsection.3.2.1.2}
+\contentsline {subsubsection}{\numberline {3.2.1.3}$t_0 = 0$, but $\Delta f = ?$}{14}{subsubsection.3.2.1.3}
+\contentsline {section}{\numberline {3.3}Input Signal of Peak Detector}{14}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Mathematical Model}{14}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Description of Variables}{14}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Description of Output of Matched Filter}{15}{subsubsection.3.3.1.2}
+\contentsline {paragraph}{\numberline {3.3.1.2.1}Perfectly Aligned}{17}{paragraph.3.3.1.2.1}
+\contentsline {paragraph}{\numberline {3.3.1.2.2}Chip-level Aligned}{20}{paragraph.3.3.1.2.2}
+\contentsline {paragraph}{\numberline {3.3.1.2.3}Totally Misaligned}{22}{paragraph.3.3.1.2.3}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Ideal Situation}{23}{subsubsection.3.3.1.3}

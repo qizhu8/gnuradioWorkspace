@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  23 JUL 2016 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 AUG 2016 23:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -819,7 +819,14 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
 \arrowsize=\dimen201
-)) (./get_start_with_gr-cdma.aux)
+)) (./get_start_with_gr-cdma.aux
+
+LaTeX Warning: Label `sub:mathematical_model' multiply defined.
+
+
+LaTeX Warning: Label `eq:totally misaligned-training' multiply defined.
+
+)
 \openout1 = `get_start_with_gr-cdma.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -836,8 +843,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
-
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count157
 \scratchdimen=\dimen202
@@ -911,13 +917,13 @@ been already used, duplicate ignored
 l.43 \newpage
               [1
 
-]
+] [2]
 Chapter 1.
-[2
+[3
 
 ]
 Chapter 2.
-<figure/tx-diagram.png, id=120, 720.291pt x 499.1448pt>
+<figure/tx-diagram.png, id=247, 720.291pt x 499.1448pt>
 File: figure/tx-diagram.png Graphic file (type png)
 
 <use figure/tx-diagram.png>
@@ -928,7 +934,7 @@ Overfull \hbox (16.34999pt too wide) in paragraph at lines 77--78
  [][] 
  []
 
-<figure/rx-diagram.png, id=122, 911.0838pt x 424.9476pt>
+<figure/rx-diagram.png, id=249, 911.0838pt x 424.9476pt>
 File: figure/rx-diagram.png Graphic file (type png)
 
 <use figure/rx-diagram.png>
@@ -939,17 +945,17 @@ Overfull \hbox (16.34999pt too wide) in paragraph at lines 83--84
  [][] 
  []
 
-[3
+[4
 
  <./figure/tx-diagram.png>]
-<figure/bad_correlation.png, id=131, 230.3004pt x 152.7306pt>
+<figure/bad_correlation.png, id=258, 230.3004pt x 152.7306pt>
 File: figure/bad_correlation.png Graphic file (type png)
 
 <use figure/bad_correlation.png>
 Package pdftex.def Info: figure/bad_correlation.png used on input line 100.
 (pdftex.def)             Requested size: 216.81pt x 143.78584pt.
 
-<figure/good_correlation.png, id=132, 230.3004pt x 152.7306pt>
+<figure/good_correlation.png, id=259, 230.3004pt x 152.7306pt>
 File: figure/good_correlation.png Graphic file (type png)
 
 <use figure/good_correlation.png>
@@ -965,8 +971,8 @@ Overfull \hbox (5.6228pt too wide) in paragraph at lines 124--137
  [][] 
  []
 
-[4 <./figure/rx-diagram.png>]
-<figure/data_frame.png, id=149, 755.4624pt x 195.6108pt>
+[5 <./figure/rx-diagram.png>]
+<figure/data_frame.png, id=275, 755.4624pt x 195.6108pt>
 File: figure/data_frame.png Graphic file (type png)
 
 <use figure/data_frame.png>
@@ -977,7 +983,7 @@ Overfull \hbox (16.34999pt too wide) in paragraph at lines 174--175
  [][] 
  []
 
-<figure/training_frame.png, id=150, 752.5716pt x 211.5102pt>
+<figure/training_frame.png, id=276, 752.5716pt x 211.5102pt>
 File: figure/training_frame.png Graphic file (type png)
 
 <use figure/training_frame.png>
@@ -988,43 +994,241 @@ Overfull \hbox (16.34999pt too wide) in paragraph at lines 180--181
  [][] 
  []
 
-[5 <./figure/bad_correlation.png> <./figure/good_correlation.png>]
-(./get_start_with_gr-cdma.bbl [6] [7 <./figure/data_frame.png> <./figure/traini
-ng_frame.png>]) [8
+[6 <./figure/bad_correlation.png> <./figure/good_correlation.png>] [7] [8 <./fi
+gure/data_frame.png> <./figure/training_frame.png>]
+<figure/frequency_and_timing_estimator_diagram.png, id=305, 925.056pt x 420.129
+6pt>
+File: figure/frequency_and_timing_estimator_diagram.png Graphic file (type png)
+
+ <use figure/frequency_and_timing_estimator_diagram.png>
+Package pdftex.def Info: figure/frequency_and_timing_estimator_diagram.png used
+ on input line 254.
+(pdftex.def)             Requested size: 361.34999pt x 164.11272pt.
+
+Overfull \hbox (16.34999pt too wide) in paragraph at lines 254--255
+ [][] 
+ []
+
+<figure/xlating_filter_diagram.png, id=306, 304.9794pt x 108.8868pt>
+File: figure/xlating_filter_diagram.png Graphic file (type png)
+
+<use figure/xlating_filter_diagram.png>
+Package pdftex.def Info: figure/xlating_filter_diagram.png used on input line 2
+62.
+(pdftex.def)             Requested size: 216.81pt x 77.40984pt.
+ [9] [10 <./figure/frequency_and_timing_estimator_diagram.png> <./figure/xlatin
+g_filter_diagram.png>] [11]
+Chapter 3.
+<figure/tx.png, id=326, 502.0356pt x 142.131pt>
+File: figure/tx.png Graphic file (type png)
+ <use figure/tx.png>
+Package pdftex.def Info: figure/tx.png used on input line 302.
+(pdftex.def)             Requested size: 224.03743pt x 63.427pt.
+
+<figure/rx.png, id=327, 605.1408pt x 239.9364pt>
+File: figure/rx.png Graphic file (type png)
+ <use figure/rx.png>
+Package pdftex.def Info: figure/rx.png used on input line 305.
+(pdftex.def)             Requested size: 224.03743pt x 88.82999pt.
+ [12
+
+ <./figure/tx.png> <./figure/rx.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 349.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Delta' on input line 349.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 349.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 349.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 349.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 349.
+
+[13]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Delta' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 367.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 367.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 367.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 367.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Delta' on input line 367.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 367.
+
+File: figure/training_frame.png Graphic file (type png)
+<use figure/training_frame.png>
+Package pdftex.def Info: figure/training_frame.png used on input line 422.
+(pdftex.def)             Requested size: 224.03743pt x 62.9662pt.
+File: figure/data_frame.png Graphic file (type png)
+ <use figure/data_frame.png>
+Package pdftex.def Info: figure/data_frame.png used on input line 425.
+(pdftex.def)             Requested size: 224.03743pt x 58.00912pt.
+
+<figure/p_t_k.png, id=360, 387.849pt x 113.7048pt>
+File: figure/p_t_k.png Graphic file (type png)
+ <use figure/p_t_k.png>
+Package pdftex.def Info: figure/p_t_k.png used on input line 449.
+(pdftex.def)             Requested size: 224.03743pt x 65.6799pt.
+
+[14] [15] [16 <./figure/p_t_k.png>]
+<figure/perfectly_aligned.png, id=389, 642.7212pt x 156.1032pt>
+File: figure/perfectly_aligned.png Graphic file (type png)
+
+<use figure/perfectly_aligned.png>
+Package pdftex.def Info: figure/perfectly_aligned.png used on input line 544.
+(pdftex.def)             Requested size: 224.03743pt x 54.41302pt.
+ [17]
+<figure/conv_figure.png, id=411, 358.941pt x 129.6042pt>
+File: figure/conv_figure.png Graphic file (type png)
+
+<use figure/conv_figure.png>
+Package pdftex.def Info: figure/conv_figure.png used on input line 586.
+(pdftex.def)             Requested size: 224.03743pt x 80.89365pt.
+ [18 <./figure/perfectly_aligned.png>] [19 <./figure/conv_figure.png>]
+<figure/chip_level_aligned.png, id=449, 642.7212pt x 156.585pt>
+File: figure/chip_level_aligned.png Graphic file (type png)
+
+<use figure/chip_level_aligned.png>
+Package pdftex.def Info: figure/chip_level_aligned.png used on input line 651.
+(pdftex.def)             Requested size: 224.03743pt x 54.58096pt.
+ [20 <./figure/chip_level_aligned.png>]
+<figure/misaligned_conv.png, id=465, 397.0032pt x 229.3368pt>
+File: figure/misaligned_conv.png Graphic file (type png)
+
+<use figure/misaligned_conv.png>
+Package pdftex.def Info: figure/misaligned_conv.png used on input line 677.
+(pdftex.def)             Requested size: 224.03743pt x 129.41806pt.
+ [21 <./figure/misaligned_conv.png>]
+<figure/totally_misaligned.png, id=484, 643.203pt x 156.1032pt>
+File: figure/totally_misaligned.png Graphic file (type png)
+
+<use figure/totally_misaligned.png>
+Package pdftex.def Info: figure/totally_misaligned.png used on input line 709.
+(pdftex.def)             Requested size: 224.03743pt x 54.37253pt.
+
+<figure/chip_level_misaligned.png, id=485, 197.0562pt x 71.7882pt>
+File: figure/chip_level_misaligned.png Graphic file (type png)
+
+<use figure/chip_level_misaligned.png>
+Package pdftex.def Info: figure/chip_level_misaligned.png used on input line 72
+8.
+(pdftex.def)             Requested size: 224.03743pt x 81.62029pt.
+ [22 <./figure/totally_misaligned.png> <./figure/chip_level_misaligned.png>]
+Missing character: There is no Â in font cmr10!
+Missing character: There is no   in font cmr10!
+
+<figure/autocorrelation.png, id=502, 268.3626pt x 147.9126pt>
+File: figure/autocorrelation.png Graphic file (type png)
+
+<use figure/autocorrelation.png>
+Package pdftex.def Info: figure/autocorrelation.png used on input line 792.
+(pdftex.def)             Requested size: 224.03743pt x 123.48288pt.
+
+<figure/cross-correlation.png, id=503, 267.8808pt x 147.9126pt>
+File: figure/cross-correlation.png Graphic file (type png)
+
+<use figure/cross-correlation.png>
+Package pdftex.def Info: figure/cross-correlation.png used on input line 795.
+(pdftex.def)             Requested size: 224.03743pt x 123.70631pt.
+ [23] (./get_start_with_gr-cdma.bbl [24 <./figure/autocorrelation.png> <./figur
+e/cross-correlation.png>]) [25
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
- (./get_start_with_gr-cdma.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 822.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 822.
+
+(./get_start_with_gr-cdma.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 822.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 822.
 Package rerunfilecheck Info: File `get_start_with_gr-cdma.out' has not changed.
 
-(rerunfilecheck)             Checksum: 0E532B9CAD9BDE6AB530C66BFE090D01;889.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
+(rerunfilecheck)             Checksum: 70900A47452B800016790DA0C719CB23;2771.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 822.
  ) 
 Here is how much of TeX's memory you used:
- 21583 strings out of 493089
- 422528 string characters out of 6134842
- 515685 words of memory out of 5000000
- 24627 multiletter control sequences out of 15000+600000
+ 21877 strings out of 493089
+ 428487 string characters out of 6134842
+ 527434 words of memory out of 5000000
+ 24752 multiletter control sequences out of 15000+600000
  12883 words of font info for 50 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,15n,78p,492b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,21n,78p,1520b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on get_start_with_gr-cdma.pdf (9 pages, 448402 bytes).
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on get_start_with_gr-cdma.pdf (26 pages, 953828 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 635 PDF objects out of 1000 (max. 8388607)
+ 530 compressed objects within 6 object streams
+ 190 named destinations out of 1000 (max. 500000)
+ 500 words of extra memory for PDF output out of 10000 (max. 10000000)
 
